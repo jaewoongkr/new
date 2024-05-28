@@ -1,0 +1,291 @@
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0);
+    z-index: 100;
+}
+.logo{
+    z-index: 300;
+    width: 30px;
+    bottom: 25%;
+    left: 25px;
+    position: absolute;
+}
+header nav ul{
+    display: flex;
+    justify-content: right;
+}
+
+header nav ul li{
+    margin: 0 40px;
+    list-style: none; /* 태그 디자인 */
+}
+header nav ul li a {
+    color: white; /* 텍스트 색상을 하얀색으로 설정합니다. */
+    text-decoration: none; /* 링크에 밑줄을 없앱니다. */
+    font-size: 25px; /* 텍스트 크기를 조정합니다. */
+    font-family: "Notable", serif;
+}
+
+
+
+/* 풀페이지  */
+
+#fullpage {
+    position: relative; /* 부모 요소로부터 상대적 위치 설정 */
+}
+
+/*.dn1{*/
+/*    position: absolute;*/
+/*    z-index: 250;*/
+/*    width: 500px;*/
+/*    height: auto;*/
+/*    right: 17px;*/
+/*    bottom: 3%;*/
+/*}*/
+video {
+    position: absolute;
+    z-index: 249;
+    width: 1000px;
+    height: auto;
+    bottom: 1px; /* 아래쪽 여백 조정 */
+    right: -212px; /* 오른쪽 여백 조정 */
+
+}
+
+.box1{
+    position: absolute;
+    z-index: 250;
+    width: 900px;
+    height: 20px;
+    right: 10%;
+    bottom: 1%;
+    background-color: white;
+    mix-blend-mode:difference;
+}
+.box2{
+    position: absolute;
+    z-index: 250;
+    width: 300px;
+    height: 350px;
+    right: 35%;
+    bottom: 30%;
+    background-color: white;
+    mix-blend-mode:difference;
+
+}
+.box3{
+    position: absolute;
+    z-index: 250;
+    width: 700px;
+    height: 100px;
+    bottom: 62%;
+    left: 9px;
+    background-color: white;
+    mix-blend-mode:difference;
+
+}
+.bcode{
+    position: absolute;
+    z-index: 250;
+    width: 400px;
+    height: auto;
+    bottom: -7%;
+}
+
+
+
+
+/* 1번째 구역   */
+
+#home1 {
+    background-image: url(image/backimage4.jpg);
+    background-position: top left ;
+  
+}
+
+.big-title { /*제목*/
+    position: absolute; /* 화면의 상단에 절대적 위치 설정 */
+    top: -2%;
+    left: 10px; /* 왼쪽 여백 설정 */
+    margin-bottom: 20px;
+    font-family: "Notable", serif;
+    font-size: 12vw; /* 원하는 크기로 조절 */
+    color: #fff; /* 글자 색상 설정 */
+    mix-blend-mode:difference;
+    z-index: 200;
+}
+
+.small-title { /*제목*/
+    position: absolute; /* 화면의 상단에 절대적 위치 설정 */
+    top: 18%;
+    left: 12px; /* 왼쪽 여백 설정 */
+    font-family: "Notable", serif;
+
+    font-size: 8vw; /* 원하는 크기로 조절 */
+    color: #fff; /* 글자 색상 설정 */
+    mix-blend-mode:difference;
+    z-index: 200;
+}
+
+
+
+
+
+
+
+/* 2번째 구역   */
+.Album {
+    position: absolute;
+    color: #fff;
+    font-family: "Notable", serif;
+    font-size: 5.5vw; /* 화면 너비의 2%에 해당하는 크기 */
+    left: 0.5%;
+    top: -31%;
+}
+
+#home2{
+    position: relative;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(image/background.jpeg);
+
+
+}
+.card-container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-top: 20px; /* 위쪽 간격 추가 */
+}
+.card{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    position: relative;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 카드에 맞게 비율을 유지하면서 표시됩니다. */
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+.card:hover .card-body{
+    right: 0;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Notable", serif;
+    text-align: center;/*중앙 정렬*/
+    margin-top: -5px;
+}
+
+/* 3번째 구역   */
+#home3{
+    background-color: black;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(image/background.jpeg);
+
+   
+}
+
+
+.swiper-container {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+
+
+}
+
+.Chart {
+    position: absolute;
+    color: #fff;
+    font-family: "Notable", serif;
+    font-size: 5.5vw; /* 화면 너비의 2%에 해당하는 크기 */
+    left: 10%;
+    top: 37%;
+    mix-blend-mode:exclusion;
+    z-index: 200;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+
+}
+/* 4번째 구역   */
+
+
+#home4{
+    background-color: black;
+}
+.Comment{
+    position: absolute;
+    color: #fff;
+    font-family: "Notable", serif;
+    font-size: 5.5vw; /* 화면 너비의 2%에 해당하는 크기 */
+    top: 1%;
+
+}
+table{     /* 테이블 사이즈 */
+    width: 90%;   /* 테이블 좌우 넓이*/
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;   /* 좌우 여백을 auto로 설정하여 가운데에 정렬 */
+
+}
+thead th{ /* 제목 라인 */
+    position: sticky;
+    top: 0;
+    background-color: #57576f;
+    color: white;
+    font-size: 20px; 
+}
+th,td{
+    border-bottom: 1px solid #dddddd;
+    background-color: #f4f4fa;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+/* td img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid;
+} */
+.lasttext{
+    position: absolute;
+    color: #fff;
+    font-family:"Notable", serif;
+    font-size: 120px;
+    bottom: -3%; 
+}
+
